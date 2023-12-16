@@ -1,9 +1,9 @@
 import React from 'react'
-
-export default function BannerLogo() {
+import {ReactComponent as LogoIcon} from"../../assets/qtify-group.svg"
+export default function BannerLogo(props) {
   return (
-    <div>BannerLogo
+    
+        <LogoIcon/>
         
-    </div>
   )
 }
