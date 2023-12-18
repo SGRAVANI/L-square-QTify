@@ -4,7 +4,7 @@ import React from 'react'
 export default function BannerLogo(props) {
   return (
     
-        <img src={require("../../assets/logo.png")} width={67} height={34} alt="logo"/>
+        <img src={require("../../assets/logo.png")} width={67} height={34} alt="logo" style={{verticalAlign: "middle"}}/>
         
   )
 }
