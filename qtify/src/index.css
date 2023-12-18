@@ -6,7 +6,8 @@
 }
 body {
 
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
+  /* font-family: 'Poppins', sans-serif; */
   line-height: 1.5;
   background-color: var(--black);
   -webkit-font-smoothning:antialiased;
