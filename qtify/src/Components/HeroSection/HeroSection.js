@@ -6,7 +6,7 @@ export default function HeroSection() {
     <div className={styles.wrapper}>
    
         <div>
-          <h1 className={styles.heading}>100 Thousand Songs, add-free</h1>
+          <h1 className={styles.heading}>100 Thousand Songs, ad-free</h1>
           <h1 className={styles.heading}>Over Thousand podcast episodes</h1>
         </div>
        
