@@ -5,12 +5,14 @@
     align-items: center;
     justify-content: center;
     column-gap: 30px;
+    background-color: var(--black);
 }
 .heading{
  font-weight: 600;
  font-size: 32px;
  text-align:center;
  line-height: 48px;
+ text-align: center;
  /* max-width:556px; */
 
 }
