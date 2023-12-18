@@ -5,9 +5,16 @@ export default function HeroSection() {
   return (
     <div className={styles.wrapper}>
    
-        <p className={styles.heading}>100 Thousand Songs, add-free Over Thousand podcast episodes</p>
-        <VibratingHeadphones/>
-
+        <div>
+          <h1 className={styles.heading}>100 Thousand Songs, add-free</h1>
+          <h1 className={styles.heading}>Over Thousand podcast episodes</h1>
+        </div>
+       
+        {/* <VibratingHeadphones/> */}
+        <div className={styles['image-holder']}>
+        <img src={require("../../assets/vibrating-headphone.png")} 
+        className={styles['img-style']}/>
+        </div>
     </div>
   )
 }

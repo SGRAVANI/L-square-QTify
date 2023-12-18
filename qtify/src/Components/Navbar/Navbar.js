@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <div className={styles.wrapper}>
         <BannerLogo/>
-        <Search placeholder="search an album of your choice"/>
+        <Search placeholder="Search an album of your choice"/>
         <Button text="Give Feedback"/>
     </div>
   )

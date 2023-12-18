@@ -1,12 +1,9 @@
 .button{
     padding: 10px 16px 10px 16px;
-    /* border: 1px solid var(--primary); */
-    border: 1px solid #34c94b;
+    border: 1px solid var(--primary);
     border-radius: 12px;
-    /* color:var(--primary); */
-    color:#34c94b;
-    background-color: #121212;
-    /* background-color:var(--black); */
+    color:var(--primary);
+    background-color:var(--black);
     font-weight: 600;
     font-size:18px;
     line-height: 27px;
