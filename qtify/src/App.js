@@ -53,7 +53,8 @@ console.log(songData)
     <BannerLogo/> */}
     <Navbar searchData={searchData}/>
     <HeroSection/>
-    <Section title="Top Albums"/>
+    <Section title="Top Albums" url="https://qtify-backend-labs.crio.do/albums/top" cat="album"/>
+    <Section title="New Albums" url="https://qtify-backend-labs.crio.do/albums/new" cat="album"/>
     {/* <Card data={data} type="album"/>
     <Card data={songData} type="song"/> */}
     </>
