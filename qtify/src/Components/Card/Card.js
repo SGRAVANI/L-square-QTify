@@ -3,16 +3,17 @@ import styles from "./Card.module.css";
 import { Tooltip } from '@mui/material';
 import {Chip} from "@mui/material"
 export default function Card({data,type}) {
-  
+  console.log(data,type)
     function getCard(type)
     {
     if(type==="album")
     {
-        const{image,title,follows,slug,songs}=data
+        const{image,title,follows,slug,songs}=data;
+
     return(
-   
+      
     <a href={`/album/${slug}`} style={{display:"inline-block"}}>
-         <Tooltip title={`${songs.length} songs`} placement='top' arrow>
+         {/* <Tooltip title={`${songs.length} songs`} placement='top' arrow> */}
     <div className={styles['card-container']}>
     <div className={styles['card-body']}>
         <img src={image} alt="card-image" loading='lazy' style={{width:"100%",height:"85%",objectFit:"fill"}}/>
@@ -25,7 +26,7 @@ export default function Card({data,type}) {
     </div>
     <div className={styles['title-wrapper']}><p>{title}</p></div>
 </div>
-</Tooltip>
+{/* </Tooltip> */}
 
 </a>
 
