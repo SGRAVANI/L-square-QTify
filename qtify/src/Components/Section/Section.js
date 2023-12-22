@@ -11,6 +11,7 @@ function handleToggle()
     setCarouselToggle((prev)=>!prev);
 }
     return (<div className={styles['section-wrapper']}>
+        <div className={styles['section-padding']}>
      <div className={styles.header}>
         <h3>{title}</h3>
         <h4 className={styles.toggleText} onClick={handleToggle}>{!carouselToggle?"Collapse All":"Show All"}</h4>
@@ -25,7 +26,9 @@ function handleToggle()
         ( <></>)
         }
      </div>
+     
      }
+     </div>
     </div>)
 
 
