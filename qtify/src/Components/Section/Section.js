@@ -12,7 +12,7 @@ import RightButton from '../NavigarionButtons/RightButton/RightButton';
 
 export default function Section({title,data,type,key}) {
   //  console.log(data,"from section page")
-const [carouselToggle,setCarouselToggle]=useState(false)
+const [carouselToggle,setCarouselToggle]=useState(true)
 function handleToggle()
 {
     setCarouselToggle((prev)=>!prev);
