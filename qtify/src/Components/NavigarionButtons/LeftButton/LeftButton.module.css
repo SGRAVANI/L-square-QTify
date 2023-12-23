@@ -1,0 +1,9 @@
+
+  .left{
+      position: absolute;
+      left:10px;
+      top: 40%;
+     transform: translateY(-50%);
+     z-index:2000;
+     cursor: pointer;
+  }

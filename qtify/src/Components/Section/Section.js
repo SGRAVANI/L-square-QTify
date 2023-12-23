@@ -4,7 +4,14 @@ import styles from "./Section.module.css";
 // import axios from "axios";
 import Card from '../Card/Card';
 import { CircularProgress } from '@mui/material';
+import Carousel from '../Carousel/Carousel';
+import LeftButton from '../NavigarionButtons/LeftButton/LeftButton';
+import RightButton from '../NavigarionButtons/RightButton/RightButton';
+
+
+
 export default function Section({title,data,type,key}) {
+  //  console.log(data,"from section page")
 const [carouselToggle,setCarouselToggle]=useState(false)
 function handleToggle()
 {
@@ -23,8 +30,10 @@ function handleToggle()
                { data.map((ele) =>  <Card key={ele.id} data={ele} type={type}  />)}
             </div>
         ):
-        ( <></>)
+        ( <Carousel data={data} renderComponent={(element)=><Card data={element} type={type} /> } /> )
+        //here in renderComponnet call back is passed which value will be supplied from Carousel
         }
+       
      </div>
      
      }

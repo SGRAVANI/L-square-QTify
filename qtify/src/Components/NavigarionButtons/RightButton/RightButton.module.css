@@ -1,0 +1,13 @@
+.right{
+    position: absolute;
+    right:10px;
+    top: 40%;
+    transform: translateY(-50%);
+    z-index:2000;
+   /* width: 32px;
+   height: 32px; */
+   cursor: pointer;
+    /* background-color:var(--primary);
+    color:var(--white); */
+    /* border-radius: 50%; */
+  }

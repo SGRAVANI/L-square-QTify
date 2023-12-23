@@ -6,6 +6,7 @@ import Navbar from "./Components/Navbar/Navbar";
 // import Section from "./Components/Section/Section";
 import { Outlet } from "react-router-dom";
 import { fetchTopAlbums,fetchSongs,fetchNewAlbums,fetchFilters } from "./Components/api/api";
+
 function App() {
 let [data,setData]=useState({})
 let [searchData,useSearchData]=useState() 
@@ -43,6 +44,7 @@ generateData("songs",fetchSongs)
     <Navbar searchData={searchData}/>
     <Outlet context={{data:{topAlbums,newAlbums,songs}}}/>
     </div>
+   
     {/* <HeroSection/>
     <Section title="Top Albums" url="https://qtify-backend-labs.crio.do/albums/top" cat="album"/>
     <Section title="New Albums" url="https://qtify-backend-labs.crio.do/albums/new" cat="album"/> */}

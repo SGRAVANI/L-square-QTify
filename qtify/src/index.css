@@ -32,3 +32,6 @@ image,picture,video,audio,canvas,svg{
 #__next{
   isolation: isolate;
 }
+.swiper-slide{
+  width: auto !important;
+}
