@@ -113,7 +113,7 @@ return (
       <Controls daat={data} />
       <LeftButton />
    <RightButton /> 
-     {data.map((ele)=>{return (<SwiperSlide>{renderComponent(ele)}</SwiperSlide>)})}
+     {data.map((ele)=>{return (<SwiperSlide key={ele.id}>{renderComponent(ele)}</SwiperSlide>)})}
 
     
  
